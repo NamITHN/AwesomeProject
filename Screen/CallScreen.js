@@ -4,9 +4,11 @@ import {} from 'native-base'
 
 export default class CallScreen extends Component {
     render() {
+        var {params}=this.props.navigation.state;
         return (
             <View>
                 <Text>CALL</Text>
+               <Text>PARAM: {params.name}</Text>
             </View>
         );
     }
